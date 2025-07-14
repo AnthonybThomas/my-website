@@ -1,3 +1,3 @@
 # my-website
 
-Just practice for now.
+Starting the basic draft for my website.
