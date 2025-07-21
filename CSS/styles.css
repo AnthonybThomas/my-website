@@ -31,7 +31,9 @@ section#links>ul {
 #links h2 {
     background: #571e43;
 }
-footer{ background: #571e43;}
+footer{ background: #571e43;
+text-align: right;
+font-size: 80%;}
 
 #bio p {
     text-align: justify;
