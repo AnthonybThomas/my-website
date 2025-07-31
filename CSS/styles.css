@@ -5,6 +5,7 @@ body {
     color: rgb(255, 255, 255);
     background-color: #000000;
     font-size: 1.1em;
+
 }
 
 header {
@@ -24,21 +25,34 @@ section#links>ul {
     font-size: 1.2em;
     margin: 0%;
     padding: 0%;
-    margin-bottom: 1%;
-    
+    background-image: linear-gradient(#571e43, #000000, #571e43);
+
+
+
 }
 
 #links h2 {
-    background: #571e43;
+    background-image: linear-gradient(#000000, #571e43);
+    margin-bottom: 0%;
+    border-bottom: solid thick #000000;
+
+
 }
-footer{ background: #571e43;
-text-align: right;
-font-size: 80%;}
+
+footer {
+    background: #571e43;
+    text-align: right;
+    font-size: 80%;
+    margin: 0%;
+    background-image: linear-gradient(#571e43, #000000);
+}
 
 #bio p {
     text-align: justify;
     column-count: 2;
-    margin: auto;
+    margin: 0em;
+    padding: 0.2%;
+    border: thick solid #571e43;
 
 }
 
@@ -55,17 +69,38 @@ section#links a:visited {
 
 /* ID selectors */
 #bandimage {
-    float: left;
-    margin-left: 3.5em;
-    margin-top: 3.5em;
-    aspect-ratio: 7/6;
+    float: center;
+    margin: 1em;
+    /* margin-right:; */
+
+
 }
 
 /* class selectors */
 .liveimg1 {
     float: center;
-    margin-left: 2.5em;
+    margin: 3.5em;
 
 }
 
-/* about  styles  */
+/* Music.html  */
+
+#biocover,
+#artcover,
+#velvetcover {
+    align-items: center;
+    padding: 0.5em;
+}
+
+#albums ol {
+    list-style-position: inside;
+    padding: 0%;
+    border: thick solid #571e43;
+    margin: 0em 30em;
+
+}
+
+#albums p {
+    line-height: 29%;
+    font-weight: bold;
+}
