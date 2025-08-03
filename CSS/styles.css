@@ -2,55 +2,103 @@
 
 
 body {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     background-color: #000000;
-    font-size: 1.1em;
+    font-size: 105%;
 
+}
+
+img {
+    width: 60%;
+}
+
+#start {
+    font-size: 120%;
 }
 
 header {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: oblique;
+    clear: right;
+    padding-top: 1%;
+    /* font-size: 100%; */
 }
 
 main {
     text-align: center;
+    clear: left;
 }
 
-/* Relational selector */
-section#links>ul {
+
+/* Navigation Menu */
+
+#links ul {
     list-style-position: inside;
     list-style-type: none;
-    font-size: 1.2em;
+    font-size: 140%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0%;
     padding: 0%;
     background-image: linear-gradient(#571e43, #000000, #571e43);
+    margin: auto;
+    width: 100%;
 
+}
+
+
+
+#links ul li {
+    float: left;
+    width: 6em;
+    padding: 0% 1%;
+    border-bottom: #571e43 0.1em groove;
 
 
 }
+
+#links ul li a {
+    text-align: center;
+    display: block;
+    width: 6em;
+    padding: 0%;
+    margin: auto;
+    text-decoration: none;
+
+
+}
+
+#links ul li a.lastitem {
+    border-right: none;
+}
+
+
 
 #links h2 {
     background-image: linear-gradient(#000000, #571e43);
     margin-bottom: 0%;
-    border-bottom: solid thick #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: solid thick #571e43;
+    clear: left;
 
 
 }
 
 footer {
-    background: #571e43;
+    /* background: #571e43; */
     text-align: right;
     font-size: 80%;
     margin: 0%;
+    clear: left;
     background-image: linear-gradient(#571e43, #000000);
+    padding-top: 1%;
 }
 
 #bio p {
     text-align: justify;
     column-count: 2;
-    margin: 0em;
+    column-gap: 20px;
+    margin: 0;
     padding: 0.2%;
     border: thick solid #571e43;
 
@@ -58,30 +106,23 @@ footer {
 
 
 /* pseudo-class */
-section#links a:hover {
-    font-size: 150%;
+#links a:hover {
+    color: #ff0000;
+    background-color: #818181;
 
 }
 
-section#links a:visited {
-    color: #ff1e00;
-}
+
 
 /* ID selectors */
 #bandimage {
     float: center;
-    margin: 1em;
+    margin: 2%;
     /* margin-right:; */
 
 
 }
 
-/* class selectors */
-.liveimg1 {
-    float: center;
-    margin: 3.5em;
-
-}
 
 /* Music.html  */
 
@@ -96,11 +137,57 @@ section#links a:visited {
     list-style-position: inside;
     padding: 0%;
     border: thick solid #571e43;
-    margin: 0em 30em;
+    margin: 0% 40%;
 
 }
 
 #albums p {
     line-height: 29%;
     font-weight: bold;
+}
+
+
+
+
+/* Media Queries */
+/* changes the menu to verticle at a certain width */
+@media only screen and (max-width: 648px) {
+
+    #links ul li {
+        float: none;
+        width: 100%;
+        border-bottom: none;
+        background-color: #000000;
+
+    }
+
+
+
+
+}
+
+/* Removes the border around the track lists with reduced width. The text would cross over the border otherwise */
+@media only screen and (max-width: 744px) {
+    #albums ol {
+        list-style-position: inside;
+        padding: 0%;
+        border: none;
+        margin: 0% 30%;
+
+    }
+}
+
+/* reduces large games from occuring as the result of the change in with with justified text */
+@media only screen and (max-width: 805px) {
+    #bio p {
+        text-align: justify;
+        hyphens: auto;
+        word-spacing: -0.15em;
+        column-count: 2;
+        column-gap: 10px;
+        margin: 0;
+        padding: 0.2%;
+
+
+    }
 }
