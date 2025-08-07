@@ -2,17 +2,15 @@
 section#frontpic {
     display: grid;
     grid-template: 33% / repeat(3, 33%);
-    grid-gap: 1%;
+    grid-gap: 0;
+    margin: 1%;
 }
 
-#group {
-    width: 100%;
-    height: 300%;
-}
-
+#group,
 #guitar,
 #stage {
     width: 100%;
+    padding: 1;
 }
 
 /* Front page grid end */
@@ -23,15 +21,11 @@ section#frontpic {
     section#frontpic {
         display: grid;
         grid-template: repeat(3, 33%) / 33%;
-        grid-gap: 1%;
+        /* grid-gap: 1%; */
         margin: 0 0 10% 25%;
     }
 
-    #group {
-        width: 200%;
-        height: 100%;
-    }
-
+    #group,
     #guitar,
     #stage {
         width: 200%;
