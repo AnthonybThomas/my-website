@@ -1,0 +1,34 @@
+/* TOUR DATES START  */
+#box {
+    display: flex;
+    flex-direction: row;
+}
+
+section#tour {
+    flex-basis: 60%;
+    margin: 2.5%;
+}
+
+aside#dates {
+    flex-basis: 40%;
+    font-size: 125%;
+    margin: 5%;
+    text-align: justify;
+}
+
+/* TOUR DATED END */
+
+/* adjusts fonot for tour dates */
+
+@media only screen and (max-width: 911px) {
+    div#box {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 421px) {
+    aside#dates {
+        font-size: 5vw;
+    }
+}

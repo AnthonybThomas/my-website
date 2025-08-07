@@ -1,0 +1,39 @@
+/* front page grid */
+section#frontpic {
+    display: grid;
+    grid-template: 33% / repeat(3, 33%);
+    grid-gap: 1%;
+}
+
+#group {
+    width: 100%;
+    height: 300%;
+}
+
+#guitar,
+#stage {
+    width: 100%;
+}
+
+/* Front page grid end */
+
+/* changes the grid to verticle at a certain width */
+@media only screen and (max-width: 648px) {
+
+    section#frontpic {
+        display: grid;
+        grid-template: repeat(3, 33%) / 33%;
+        grid-gap: 1%;
+        margin: 0 0 10% 25%;
+    }
+
+    #group {
+        width: 200%;
+        height: 100%;
+    }
+
+    #guitar,
+    #stage {
+        width: 200%;
+    }
+}

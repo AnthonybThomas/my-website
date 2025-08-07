@@ -1,26 +1,29 @@
-/* index styles */
-
-
+/* ALL PAGES STYLING */
 body {
     color: #ffffff;
     background-color: #000000;
     font-size: 105%;
-
 }
 
 img {
-    width: 60%;
+    width: 50vw;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: none;
 }
 
 #start {
     font-size: 120%;
+    clear: both;
 }
 
 header {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: oblique;
-    clear: right;
+    clear: left;
     padding-top: 1%;
     /* font-size: 100%; */
 }
@@ -38,41 +41,37 @@ main {
     list-style-type: none;
     font-size: 140%;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+
+    flex-basis: 100%;
+    justify-content: space-around;
     margin: 0%;
     padding: 0%;
-    background-image: linear-gradient(#571e43, #000000, #571e43);
+    /* background-image: linear-gradient(#571e43, #000000, #571e43); */
     margin: auto;
-    width: 100%;
-
+    /* width: 100vw; */
+    border-bottom: #571e43 0.1em groove;
 }
 
-
-
 #links ul li {
-    float: left;
-    width: 6em;
+    /* float: left; */
+    flex-basis: 25%;
+    /* width: 6em; */
     padding: 0% 1%;
-    border-bottom: #571e43 0.1em groove;
-
-
 }
 
 #links ul li a {
     text-align: center;
-    display: block;
-    width: 6em;
+
+    flex-basis: 25%;
     padding: 0%;
     margin: auto;
     text-decoration: none;
-
-
 }
 
 #links ul li a.lastitem {
     border-right: none;
 }
-
-
 
 #links h2 {
     background-image: linear-gradient(#000000, #571e43);
@@ -80,8 +79,6 @@ main {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-bottom: solid thick #571e43;
     clear: left;
-
-
 }
 
 footer {
@@ -94,100 +91,40 @@ footer {
     padding-top: 1%;
 }
 
-#bio p {
-    text-align: justify;
-    column-count: 2;
-    column-gap: 20px;
-    margin: 0;
-    padding: 0.2%;
-    border: thick solid #571e43;
-
-}
-
-
-/* pseudo-class */
 #links a:hover {
     color: #ff0000;
     background-color: #818181;
 
 }
 
-
-
-/* ID selectors */
-#bandimage {
-    float: center;
-    margin: 2%;
-    /* margin-right:; */
-
-
-}
-
-
-/* Music.html  */
-
-#biocover,
-#artcover,
-#velvetcover {
+/* flex container for images */
+.pics {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 0.5em;
+    margin: 2% 0;
 }
-
-#albums ol {
-    list-style-position: inside;
-    padding: 0%;
-    border: thick solid #571e43;
-    margin: 0% 40%;
-
-}
-
-#albums p {
-    line-height: 29%;
-    font-weight: bold;
-}
-
-
-
 
 /* Media Queries */
-/* changes the menu to verticle at a certain width */
-@media only screen and (max-width: 648px) {
-
-    #links ul li {
-        float: none;
-        width: 100%;
-        border-bottom: none;
-        background-color: #000000;
-
-    }
 
 
-
-
-}
-
-/* Removes the border around the track lists with reduced width. The text would cross over the border otherwise */
-@media only screen and (max-width: 744px) {
-    #albums ol {
-        list-style-position: inside;
-        padding: 0%;
-        border: none;
-        margin: 0% 30%;
-
-    }
-}
-
-/* reduces large games from occuring as the result of the change in with with justified text */
+/* reduces large gaps from occuring as the result of the change in with with justified text */
 @media only screen and (max-width: 805px) {
     #bio p {
-        text-align: justify;
+
         hyphens: auto;
         word-spacing: -0.15em;
-        column-count: 2;
         column-gap: 10px;
         margin: 0;
         padding: 0.2%;
+    }
+}
 
+/* changes the menu to verticle at a certain width */
+@media only screen and (max-width: 648px) {
 
+    #links ul {
+        flex-direction: column;
+        align-items: center;
     }
 }

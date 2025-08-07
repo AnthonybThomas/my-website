@@ -1,0 +1,19 @@
+#bio p {
+    text-align: justify;
+    column-count: 2;
+    column-gap: 20px;
+    margin: 0;
+    padding: 0.2%;
+    border: thick solid #571e43;
+}
+
+/* reduces large gaaps from occuring as the result of the change in with with justified text */
+@media only screen and (max-width: 805px) {
+    #bio p {
+        hyphens: auto;
+        word-spacing: -0.15em;
+        column-gap: 10px;
+        margin: 0;
+        padding: 0.2%;
+    }
+}
