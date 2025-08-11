@@ -1,4 +1,16 @@
 /* front page grid */
+h1 {
+    margin-bottom: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
 section#frontpic {
     display: grid;
     grid-template: 33% / repeat(3, 33%);

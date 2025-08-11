@@ -3,10 +3,15 @@ body {
     color: #ffffff;
     background-color: #000000;
     font-size: 105%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 img {
     width: 50vw;
+}
+
+a {
+    color: #ff0000;
 }
 
 ul {
@@ -41,10 +46,11 @@ main {
     list-style-type: none;
     font-size: 140%;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
     display: flex;
-
+    color: #ffffff;
     flex-basis: 100%;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     margin: 0%;
     padding: 0%;
     /* background-image: linear-gradient(#571e43, #000000, #571e43); */
@@ -57,6 +63,7 @@ main {
     /* float: left; */
     flex-basis: 25%;
     /* width: 6em; */
+    background-color: #571e43;
     padding: 0% 1%;
 }
 
@@ -91,11 +98,16 @@ footer {
     padding-top: 1%;
 }
 
+#links a:visited {
+    color: aliceblue;
+}
+
 #links a:hover {
     color: #ff0000;
     background-color: #818181;
 
 }
+
 
 /* flex container for images */
 .pics {
@@ -108,23 +120,12 @@ footer {
 /* Media Queries */
 
 
-/* reduces large gaps from occuring as the result of the change in with with justified text */
-@media only screen and (max-width: 805px) {
-    #bio p {
-
-        hyphens: auto;
-        word-spacing: -0.15em;
-        column-gap: 10px;
-        margin: 0;
-        padding: 0.2%;
-    }
-}
-
 /* changes the menu to verticle at a certain width */
 @media only screen and (max-width: 648px) {
 
     #links ul {
         flex-direction: column;
         align-items: center;
+        background-color: #571e43;
     }
 }

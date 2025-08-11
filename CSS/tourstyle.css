@@ -20,7 +20,7 @@ aside#dates {
 
 /* adjusts fonot for tour dates */
 
-@media only screen and (max-width: 911px) {
+@media only screen and (max-width: 946px) {
     div#box {
         flex-direction: column;
         align-items: center;
