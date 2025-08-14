@@ -1,13 +1,14 @@
 #bio {
     border: thick solid #571e43;
-    column-gap: 1px;
+    column-gap: 5px;
     column-count: 2;
+    padding: 1.5%;
 }
 
 #bio p {
     text-align: left;
-    margin: 1%;
-    text-indent: 5%;
+
+    text-indent: 6%;
 
 
 }

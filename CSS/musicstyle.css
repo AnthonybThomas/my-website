@@ -20,6 +20,12 @@
     font-weight: bold;
 }
 
+h3 {
+    margin: 5% 0 0 0;
+}
+
+
+
 /* MUSIC END */
 
 /* keep the track lists on one line */
@@ -31,12 +37,9 @@
         /* font-size: 3vw; */
     }
 
-    /* #albums p {
-        font-size: 1.8vw;
 
-    } */
     img {
-        width: 60vw;
+        width: 70vw;
     }
 }
 
@@ -46,5 +49,9 @@
         padding: 0%;
         margin: 0% 10%;
         font-size: 3.5vw;
+
+
     }
+
+
 }
