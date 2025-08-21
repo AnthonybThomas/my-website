@@ -1,4 +1,17 @@
 # my-website
+
+8/21/2025
+Updates from feedback
+- Fixed text box margins on biogrpahy page to fit more evenly in text border
+- moved Menu heading away from the left margin to be more in line with the rest of the page.
+- corrected the spacing of navigation menu buttons to be equally spaced apart from each other and maintain that spacing with view port width changes
+- moved video to the top of the music page
+- corrected html errors in meta lines
+- Changed all file labeling to be in lowercase.
+- Use underscores of hyphens instead of spaces for folder labeling
+- corrected incorrectedly used <p> element nesting on tours.html
+- removed all commented out css code that was not in use.
+
 8/14/2025 
 UPDATES FROM FEEDBACK:
 
