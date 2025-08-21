@@ -4,6 +4,7 @@
     flex-direction: row;
 }
 
+/* sets flex box for the page */
 section#tour {
     flex-basis: 60%;
     margin: 2.5%;

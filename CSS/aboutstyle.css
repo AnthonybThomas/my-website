@@ -1,22 +1,24 @@
+/* adds a border and columns to biography */
 #bio {
     border: thick solid #571e43;
     column-gap: 5px;
     column-count: 2;
-    padding: 1.5%;
+    padding: 1%;
 }
 
+/* spaces the text in the bordered block in a way that is visually appealing */
 #bio p {
     text-align: left;
-
     text-indent: 6%;
+    margin-top: 0%;
 
 
 }
 
+/* adjusts the image size to look appealing at different sizes */
 img {
     width: 60vw;
 }
-
 
 
 /* reduces large gaaps from occuring as the result of the change in with with justified text */

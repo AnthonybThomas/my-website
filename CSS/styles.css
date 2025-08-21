@@ -1,4 +1,5 @@
-/* ALL PAGES STYLING */
+/* ALL PAGES STYLING  to set parameters that will standard certain  aspects across all pages*/
+
 body {
     color: #ffffff;
     margin: 0.2%;
@@ -31,7 +32,6 @@ header {
     font-style: oblique;
     clear: left;
     padding-top: 1%;
-    /* font-size: 100%; */
 }
 
 main {
@@ -39,9 +39,13 @@ main {
     clear: left;
 }
 
+/* puts the navigation title inline with contents */
+#menu {
+    padding-left: 1%;
+}
+
 
 /* Navigation Menu */
-
 #links ul {
     list-style-position: inside;
     list-style-type: none;
@@ -51,29 +55,21 @@ main {
     display: flex;
     color: #ffffff;
     flex-basis: 100%;
-    /* justify-content: space-around; */
-    margin: 0%;
     padding: 0%;
-    /* background-image: linear-gradient(#571e43, #000000, #571e43); */
     margin: auto;
-    /* width: 100vw; */
     border-bottom: #571e43 0.1em groove;
 }
 
 #links ul li {
-    /* float: left; */
     flex-basis: 25%;
-    /* width: 6em; */
     background-color: #571e43;
     padding: 0% 1%;
+    text-align: center;
 }
 
 #links ul li a {
-    text-align: center;
-
     flex-basis: 25%;
     padding: 0%;
-    margin: auto;
     text-decoration: none;
 }
 
@@ -90,7 +86,6 @@ main {
 }
 
 footer {
-    /* background: #571e43; */
     text-align: right;
     font-size: 80%;
     margin: 0%;
@@ -98,7 +93,7 @@ footer {
     background-image: linear-gradient(#571e43, #000000);
     padding-top: 1%;
 }
-
+/* adds hover and visted features to links */
 #links a:visited {
     color: aliceblue;
 }

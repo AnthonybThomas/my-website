@@ -9,26 +9,23 @@ h3 {
 
 p {
     margin-top: 0;
+    padding: 0 2%;
 }
 
-/* img {width: 45%;} */
 section#frontpic {
     display: grid;
     grid-template: 33% / repeat(3, 33%);
     grid-gap: 0;
     margin: 1%;
+    margin-left: 2%;
 }
 
+/* spaces the images in a visually appealing way within their grid */
 #group,
 #guitar,
 #stage {
     width: 100%;
     padding: 1;
-}
-
-video {
-    width: 98%;
-    padding-top: 1%;
 }
 
 /* Front page grid end */
@@ -39,7 +36,6 @@ video {
     section#frontpic {
         display: grid;
         grid-template: repeat(3, 33%) / 66%;
-        /* grid-gap: 1%; */
         margin: 0 0 10% 25%;
     }
 
@@ -47,9 +43,6 @@ video {
         width: 66%;
     }
 
-    video {
-        height: 100%;
-        width: 90%;
-    }
+
 
 }
